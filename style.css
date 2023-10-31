@@ -14,7 +14,7 @@ header{
     top: 0;
     left: 0;
     width: 100%;
-    padding: 30px 8%;
+    padding: 20px 25px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -64,4 +64,96 @@ nav a:hover, nav a.active{
 }
 .social-media a:hover:nth-child(3){
     color: #E1306C;
-  }
+}
+.home{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 30px 0;
+    overflow: hidden;
+}
+.home-content{
+    max-width: 630px;
+    color: white;
+}
+.home-content h1{
+    font-size: 50px;
+    line-height: 1.2;
+    color: red;
+}
+.home-content h3{
+    font-size: 40px;
+}
+.home-content p{
+    font-size: 16px;
+    margin: 15px 0 30px;
+}
+.btn {
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    padding: 0.7em 2em;
+    border: 3px solid #000;
+    border-radius: 2px;
+    position: relative;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+    color: #000;
+    text-decoration: none;
+    transition: 0.3s ease all;
+    z-index: 1;
+}
+  
+.btn:before {
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: '';
+    background-color: #000;
+    z-index: -1;
+}
+  
+.btn:hover, .btn:focus {
+    color: white;
+}
+  
+.btn:hover:before, .btn:focus:before {
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+}
+  
+.btn:active {
+    transform: scale(0.9);
+}
+.home-img{
+    position: relative;
+    /* right: -7%; */
+    width: 340px;
+    height: 340px;
+    transform: rotate(45deg);
+}
+.home-img .rhombus{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #26284e;
+    border: 25px solid #000;
+}
+.home-img .rhombus img{
+    position: absolute;
+    top: -150px;
+    left: -243px;
+    max-width: 650px;
+    transform: rotate(-45deg);
+}
